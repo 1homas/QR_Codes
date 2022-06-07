@@ -36,8 +36,8 @@ Create QR Codes using the **[qrcode Python library](https://pypi.org/project/qrc
     ```
 
 1. Preview the images in your OS or a browser and `cat` the `QR_Code.txt` file in a terminal with a monospaced font to view it properly: 
-   ```
-   cat QR_Code.txt
+```
+cat QR_Code.txt
 
     █▀▀▀▀▀█  ▀  ▄█▄▄▀██▀▄ █▀▀▀▀▀█
     █ ███ █  ▄▄▀██▄▄▀▀▄▀▀ █ ███ █
@@ -55,7 +55,7 @@ Create QR Codes using the **[qrcode Python library](https://pypi.org/project/qrc
     █ ▀▀▀ █  ▀ ▀▀▀▀  ▄▄██▄  █▀▀▄▀
     ▀▀▀▀▀▀▀ ▀▀ ▀▀ ▀     ▀▀▀▀▀▀ ▀
 
-    ```
+```
 
 ## URL Code with Logo Image
 
@@ -70,6 +70,7 @@ Create QR Codes using the **[qrcode Python library](https://pypi.org/project/qrc
     ```
 
 1. Then view the generated image:
+
    ![ISE_Resources.QR.png](ISE_Resources.QR.png)
 
 
