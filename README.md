@@ -26,17 +26,40 @@ Create QR Codes using the **[qrcode Python library](https://pypi.org/project/qrc
 
     ```sh
     # PNG
-    qr "https://github.com/1homas/QR_Codes" > QR_Codes.png
+    qr "https://github.com/1homas/QR_Codes" > QR_Code.png
+
     # SVG
-    qr --factory=svg "https://github.com/1homas/QR_Codes" > QR_Codes.svg
+    qr --factory=svg "https://github.com/1homas/QR_Codes" > QR_Code.svg
+
     # ASCII Characters
-    qr --ascii "https://github.com/1homas/QR_Codes" > QR_Codes.txt
+    qr --ascii "https://github.com/1homas/QR_Codes" > QR_Code.txt
     ```
 
+1. Preview the images in your OS or a browser and `cat` the `QR_Code.txt` file in a terminal with a monospaced font to view it properly: 
+   ```
+   cat QR_Code.txt
+
+    █▀▀▀▀▀█  ▀  ▄█▄▄▀██▀▄ █▀▀▀▀▀█
+    █ ███ █  ▄▄▀██▄▄▀▀▄▀▀ █ ███ █
+    █ ▀▀▀ █ ▄▄▄ ▀██ ▀ ▀▄▄ █ ▀▀▀ █
+    ▀▀▀▀▀▀▀ ▀▄█▄█ █ ▀▄█ ▀ ▀▀▀▀▀▀▀
+    ▀ ▄█▄█▀▄██▄ ▀ ▄█▀▄▄▀▄▀▄▀ ▄  ▄
+    █▀█▀ █▀▀ ▄██▄ ▄ ▀▀██▄▀  █▀██
+    █ █▀▄█▀█▄ ▄ █    ▀▀▄ █▀  ▀ ▀▀
+    ▀▀ ▀ ▄▀▄▄ █▀▄▄▄▄▄▄▄ █▄█▀▀█▀█▀
+    ▀  █▀▄▀▄█▀██▀▀▀ ▄ ▄ █▄▄█ ▄ ▀▄
+    ▀ ██▄ ▀▀▄▄▀▀▄█ ▄▀▄█ ▄█ ██  ██
+    ▀ ▀▀  ▀ █▄▄▄▀▄▀ ██▄██▀▀▀█ █▄▄
+    █▀▀▀▀▀█ ▄█ ▄ █▀ █▀▀ █ ▀ █▄▄█▄
+    █ ███ █ ▄▄█▀▀▄█▀▀ ▄▄█▀███▄▄▄▀
+    █ ▀▀▀ █  ▀ ▀▀▀▀  ▄▄██▄  █▀▀▄▀
+    ▀▀▀▀▀▀▀ ▀▀ ▀▀ ▀     ▀▀▀▀▀▀ ▀
+
+    ```
 
 ## URL Code with Logo Image
 
-1. Edit the script with your document names and URLs
+1. Edit the `qr_urls.py` script with your document names and URLs
 
 1. Save an image named `logo.png` for the logo in PNG format
 
@@ -46,6 +69,20 @@ Create QR Codes using the **[qrcode Python library](https://pypi.org/project/qrc
     qr_urls.py
     ```
 
+1. Then view the generated image:
+   ![ISE_Resources.QR.png](ISE_Resources.QR.png)
+
+
+## WiFi QR Code
+
+1. Edit the `qr_wifi.py` script with your SSID parameters
+
+1. Run the script and optionally redirect the HTML output to a file
+
+    ```sh
+    qr_wifi.py
+    qr_wifi.py > SSID.html
+    ```
 
 ## License
 
