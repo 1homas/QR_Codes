@@ -87,6 +87,6 @@ cat QR_Code.txt
 
 ## License
 
-This repository is licensed under the [MIT License", url="https://choosealicense.com/licenses/mit/).
+This repository is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
 
