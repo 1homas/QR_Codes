@@ -9,8 +9,8 @@ from qrcode.image.styledpil import StyledPilImage
 from PIL import Image
 
 urls = {
-    # { "name": "url",
-    "QR_Codes" : "https://github.com/1homas/QR_Codes",
+    # "name" : "url",
+    "ISE Resources" : "https://cs.co/ise-resources",
 }
 
 
@@ -21,4 +21,4 @@ for name,url in urls.items() :
     img = qr.make_image(image_factory=StyledPilImage,
                         embeded_image_path="./logo.png",
                        )
-    img.save('./'+name+'.QR.png')
+    img.save('./'+name.replace(' ', '_')+'.QR.png')
